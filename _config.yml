@@ -9,6 +9,14 @@
 # --- Required options --- #
 ############################
 
+##########################################################################################
+# If installing a fresh version of this theme run the following commands in the terminal #
+# The Jekyll build won't work locally or on github without if those commands didn't run  #
+##########################################################################################
+
+# bundle add webrick
+# bundle lock --add-platform x86_64-linux
+
 # Name of website
 title: HMBaytam | Data Analytica
 
