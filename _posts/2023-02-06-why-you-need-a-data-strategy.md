@@ -2,6 +2,7 @@
 layout: post
 title: 5 reasons why you need a data strategy
 subtitle: Excerpt from Soulshaping by Jeff Brown
+author: Hassan Elbaytam
 cover-img: /assets/img/path.jpg
 thumbnail-img: /assets/img/thumb.png
 share-img: /assets/img/path.jpg

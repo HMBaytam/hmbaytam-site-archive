@@ -4,9 +4,9 @@
 
   {% capture title %}
     {%- if page.share-title -%}
-      {{ page.share-title | strip_html | xml_escape }}
+      {{ page.share-title | strip_html | xml_escape }} | HMBaytam Blog
     {%- elsif page.title -%}
-      {{ page.title | strip_html | xml_escape  }}
+      {{ page.title | strip_html | xml_escape  }} | HMBaytam Blog
     {%- else -%}
       {{ site.title | strip_html | xml_escape }}
     {%- endif -%}
@@ -148,5 +148,4 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
-  
 </head>

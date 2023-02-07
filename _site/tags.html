@@ -9,7 +9,7 @@
 
   
 
-  <title>Tag Index</title>
+  <title>Tag Index | HMBaytam Blog</title>
 
   
   <meta name="author" content="Hassan Elbaytam">
@@ -90,7 +90,7 @@
 
   
   <meta property="og:site_name" content="HMBaytam | Data Analytics">
-  <meta property="og:title" content="Tag Index">
+  <meta property="og:title" content="Tag Index | HMBaytam Blog">
   <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
@@ -109,7 +109,7 @@
   <meta name="twitter:site" content="@hmbaytam">
   <meta name="twitter:creator" content="@hmbaytam">
 
-  <meta property="twitter:title" content="Tag Index">
+  <meta property="twitter:title" content="Tag Index | HMBaytam Blog">
   <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
@@ -121,7 +121,6 @@
 
   
 
-  
   
 </head>
 
@@ -188,14 +187,14 @@
         { \
           "title"    : "Sample blog post", \
           "category" : "test", \
-          "url"      : "/test-markdown", \
+          "url"      : "/test/test-markdown", \
           "date"     : "February 28, 2020" \
         }, \
        \
         { \
           "title"    : "Flake it till you make it", \
           "category" : "bookstest", \
-          "url"      : "/flake-it-till-you-make-it", \
+          "url"      : "/test/flake-it-till-you-make-it", \
           "date"     : "February 26, 2020" \
         }, \
        \
@@ -276,7 +275,7 @@
         &nbsp;books&nbsp;(1)
     </h2>
     <div class="post-list"><div class="tag-entry">
-                <a href="/flake-it-till-you-make-it">Flake it till you make it</a>
+                <a href="/test/flake-it-till-you-make-it">Flake it till you make it</a>
                 <div class="entry-date">
                     <time datetime="2020-02-26T00:00:00-05:00">February 26, 2020</time>
                 </div>
@@ -294,12 +293,12 @@
         &nbsp;test&nbsp;(2)
     </h2>
     <div class="post-list"><div class="tag-entry">
-                <a href="/test-markdown">Sample blog post</a>
+                <a href="/test/test-markdown">Sample blog post</a>
                 <div class="entry-date">
                     <time datetime="2020-02-28T00:00:00-05:00">February 28, 2020</time>
                 </div>
             </div><div class="tag-entry">
-                <a href="/flake-it-till-you-make-it">Flake it till you make it</a>
+                <a href="/test/flake-it-till-you-make-it">Flake it till you make it</a>
                 <div class="entry-date">
                     <time datetime="2020-02-26T00:00:00-05:00">February 26, 2020</time>
                 </div>
@@ -351,14 +350,6 @@
       </span>
       <span class="sr-only">GitHub</span>
    </a>
-  </li><li class="list-inline-item">
-    <a href="/feed.xml" title="RSS">
-      <span class="fa-stack fa-lg" aria-hidden="true">
-        <i class="fas fa-circle fa-stack-2x"></i>
-        <i class="fas fa-rss fa-stack-1x fa-inverse"></i>
-      </span>
-      <span class="sr-only">RSS</span>
-    </a>
   </li></ul>
 
       
