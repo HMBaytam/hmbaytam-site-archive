@@ -145,7 +145,7 @@
      window.dataLayer.push({
        'event': 'page_info',
        'page_author': '{{ site.author }}',
-       'page_title': '{% if page.title == "HMBaytam Blog" %}Home{% else %} {{ page.title }} {% endif %}',
+       'page_title': '{% if page.title == "HMBaytam Blog" %}Home{% else %}{{ page.title }}{% endif %}',
      });
    </script>
    {% endif %}
