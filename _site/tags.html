@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   
 
   
 
-  <title>Tag Index | HMBaytam Blog</title>
+
+  <title>Categories | HMBaytam Blog</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
 
   
   <meta name="author" content="Hassan Elbaytam">
@@ -47,6 +49,18 @@
 
   
 
+
+  <!-- Structured Data JSON-DL -->
+  
+   <script>
+     window.dataLayer.push({
+       'event': 'page_info',
+       'page_author': 'Hassan Elbaytam',
+       'page_title': ' Categories ',
+     });
+   </script>
+   
+  <!-- End of Structured Data JSON-DL -->
 
   
     
@@ -90,11 +104,11 @@
 
   
   <meta property="og:site_name" content="HMBaytam | Data Analytics">
-  <meta property="og:title" content="Tag Index | HMBaytam Blog">
+  <meta property="og:title" content="Categories | HMBaytam Blog">
   <meta property="og:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  <meta property="og:image" content="http://localhost:4000/assets/img/logo.png">
   
 
   
@@ -109,11 +123,11 @@
   <meta name="twitter:site" content="@hmbaytam">
   <meta name="twitter:creator" content="@hmbaytam">
 
-  <meta property="twitter:title" content="Tag Index | HMBaytam Blog">
+  <meta property="twitter:title" content="Categories | HMBaytam Blog">
   <meta property="twitter:description" content="{% assign date_format = site.date_format | default: &quot;%B %-d, %Y&quot; %} {%- capture site_tags -%} {%- for tag in site.tags -%} {{- tag | first -}}{%- unless forloop.last -%},{%- endunless -%} {%- endfor -%} {%- endcapture -%} {%- assign tags_list = site_tags | split:&apos;,&apos; | sort -%} {%- for tag...">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/logo.png">
   
 
   
@@ -122,6 +136,8 @@
   
 
   
+
+
 </head>
 
 
@@ -141,7 +157,13 @@
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tags">Categories</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
@@ -157,7 +179,7 @@
     <div class="avatar-container">
       <div class="avatar-img-border">
         <a href="http://localhost:4000/">
-          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/logo.png" />
         </a>
       </div>
     </div>
@@ -214,7 +236,7 @@
         }, \
        \
         { \
-          "title"    : "Tag Index", \
+          "title"    : "Categories", \
           "category" : "page", \
           "url"      : "/tags", \
           "date"     : "January 1, 1970" \
@@ -250,7 +272,7 @@
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
         <div class="page-heading">
-          <h1>Tag Index</h1>
+          <h1>Categories</h1>
           
 
           

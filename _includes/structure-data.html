@@ -1,0 +1,151 @@
+{% if page.layout == 'post' %}
+   <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "{{ "" | absolute_url}}",
+        "mainEntityOfPage": "{{ "" | absolute_url}}",
+        "headline": "{{ page.title }}",
+        "description": "{{ page.subtitle }}",
+        "datePublished": "{{ page.date | date_to_xmlschema}}",
+        "dateModified": "{{ page.date | date_to_xmlschema}}",
+        "author": {
+            "@type": "Person",
+            "@id": "{{ /aboutme | absolute_url  }}",
+            "name": "{{ page.author }}",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "{{ "/assets/img/headshot.JPG" | absolute_url }}",
+                "url": "{{ "/assets/img/headshot.JPG" | absolute_url }}",
+                "height": "2048",
+                "width": "1536"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "@id": "{{ "/" | absolute_url }}",
+            "name": "HMBaytam Analytics",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "{{ "/assets/img/main.png" | absolute_url }}",
+                "url": "{{ "/assets/img/main.png" | absolute_url }}",
+                "width": "600",
+                "height": "60"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "{{ page.cover-img | absolute_url }}",
+            "url": "{{ page.cover-img | absolute_url }}",
+            "height": "362",
+            "width": "388"
+        },
+        "url": "{{ page.url | absolute_url }}",
+        "isPartOf": {
+            "@type" : "Blog",
+             "@id": "{{ "/" | absolute_url }}",
+             "name": "HMBaytam Blog",
+             "publisher": {
+                 "@type": "Organization",
+                 "@id": "{{ "/" | absolute_url }}",
+                 "name": "HMBaytam Analytics"
+             }
+         }
+    }
+   </script>
+   <!-- Commented out to be used later -->
+   <!-- <script>
+            "commentCount": "1",
+        "comment": [
+            {
+                "@type": "Comment",
+                "@id": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/#Comment1",
+                "dateCreated": "2019-06-23 17:31:15",
+                "description": "I've been looking for a decent metadata scheme for use in a home-brew library system for the past 4 years now. I'm a big user of schema.org. I found this very interesting, especially the part about reconciliation. I assume you're referring to the process of identifying duplicate representations of works. This has also been one of my biggest struggles. I'll still be waiting for schema.org to mature...",
+                "author": {
+                    "@type": "Person",
+                    "name": "Jeff",
+                    "url": "http://schoenstatt.link"
+                }
+            }
+        ],
+        "about": [
+            {
+                "@type": "Thing",
+                "@id": "https://dataliberate.com/category/bibframe/",
+                "name": "Bibframe",
+                "sameAs": [
+                    "https://en.wikipedia.org/wiki/BIBFRAME",
+                    "http://www.wikidata.org/entity/Q17050075"
+                ]
+            },
+            "Data Liberate",
+            {
+                "@type": "Thing",
+                "@id": "https://dataliberate.com/category/knowledge-graph/",
+                "name": "Knowledge Graph",
+                "sameAs": [
+                    "https://en.wikipedia.org/wiki/Knowledge_Graph",
+                    "http://www.wikidata.org/entity/Q648625"
+                ]
+            },
+            {
+                "@type": "Thing",
+                "@id": "https://dataliberate.com/category/libraries/",
+                "name": "Libraries",
+                "sameAs": [
+                    "https://en.wikipedia.org/wiki/Library",
+                    "http://www.wikidata.org/entity/Q7075"
+                ]
+            },
+            {
+                "@type": "Thing",
+                "@id": "https://dataliberate.com/category/schema-org/",
+                "name": "schema.org",
+                "sameAs": [
+                    "https://en.wikipedia.org/wiki/Schema.org",
+                    "http://www.wikidata.org/entity/Q3475322"
+                ]
+            },
+            {
+                "@type": "Thing",
+                "@id": "https://dataliberate.com/category/structured-data/",
+                "name": "Structured Data",
+                "sameAs": [
+                    "https://en.wikipedia.org/wiki/Data_model",
+                    "http://www.wikidata.org/entity/Q26813700"
+                ]
+            }
+        ],
+        "wordCount": "488",
+        "keywords": [
+            "Bibframe2Schema.org",
+            "Libraries",
+            "Library of Congress"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "@id": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/#aggregate",
+            "url": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/",
+            "ratingValue": "2.5",
+            "ratingCount": "2"
+        }
+   </script> -->
+   <script>
+     window.dataLayer.push({
+       'event': 'page_info',
+       'post_author': '{{ page.author }}',
+       'post_title': '{{ page.title }}',
+       'post_subtitle': '{{ page.subtitle }}',
+       'post_category': '{{ page.category }}'
+     });
+   </script>
+   {% else %}
+   <script>
+     window.dataLayer.push({
+       'event': 'page_info',
+       'page_author': '{{ site.author }}',
+       'page_title': '{% if page.title == "HMBaytam Blog" %}Home{% else %} {{ page.title }} {% endif %}',
+     });
+   </script>
+   {% endif %}

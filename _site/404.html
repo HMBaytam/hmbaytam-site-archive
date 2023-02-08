@@ -4,12 +4,14 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   
 
   
+
 
   <title>404 - Page not found | HMBaytam Blog</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
 
   
   <meta name="author" content="Hassan Elbaytam">
@@ -48,6 +50,18 @@
 
   
 
+
+  <!-- Structured Data JSON-DL -->
+  
+   <script>
+     window.dataLayer.push({
+       'event': 'page_info',
+       'page_author': 'Hassan Elbaytam',
+       'page_title': ' 404 - Page not found ',
+     });
+   </script>
+   
+  <!-- End of Structured Data JSON-DL -->
 
   
     
@@ -96,7 +110,7 @@
   Move along. (404 error)">
 
   
-  <meta property="og:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  <meta property="og:image" content="http://localhost:4000/assets/img/logo.png">
   
 
   
@@ -116,7 +130,7 @@
   Move along. (404 error)">
 
   
-  <meta name="twitter:image" content="http://localhost:4000/assets/img/avatar-icon.png">
+  <meta name="twitter:image" content="http://localhost:4000/assets/img/logo.png">
   
 
   
@@ -125,6 +139,8 @@
   
 
   
+
+
 </head>
 
 
@@ -144,7 +160,13 @@
   <div class="collapse navbar-collapse" id="main-navbar">
     <ul class="navbar-nav ml-auto">
           <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="/aboutme">About Me</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/tags">Categories</a>
           </li>
         <li class="nav-item">
           <a class="nav-link" id="nav-search-link" href="#" title="Search">
@@ -160,7 +182,7 @@
     <div class="avatar-container">
       <div class="avatar-img-border">
         <a href="http://localhost:4000/">
-          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/avatar-icon.png" />
+          <img alt="Navigation bar avatar" class="avatar-img" src="/assets/img/logo.png" />
         </a>
       </div>
     </div>
@@ -217,7 +239,7 @@
         }, \
        \
         { \
-          "title"    : "Tag Index", \
+          "title"    : "Categories", \
           "category" : "page", \
           "url"      : "/tags", \
           "date"     : "January 1, 1970" \

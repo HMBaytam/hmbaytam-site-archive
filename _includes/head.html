@@ -1,7 +1,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  
   {% capture title %}
     {%- if page.share-title -%}
       {{ page.share-title | strip_html | xml_escape }} | HMBaytam Blog
@@ -23,7 +23,9 @@
     {%- endif -%}
   {% endcapture %}
 
+
   <title>{{ title }}</title>
+  <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
 
   {% if site.author %}
   <meta name="author" content="{{ site.author }}">
@@ -47,6 +49,10 @@
   {% include gtm_head.html %}
   {% include google_analytics.html %}
   {% include cloudflare_analytics.html %}
+
+  <!-- Structured Data JSON-DL -->
+  {% include structure-data.html%}
+  <!-- End of Structured Data JSON-DL -->
 
   {% if layout.common-ext-css %}
     {% for css in layout.common-ext-css %}
@@ -148,4 +154,6 @@
       {% include {{ file }} %}
     {% endfor %}
   {% endif %}
+
+
 </head>
