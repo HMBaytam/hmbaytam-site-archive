@@ -10,14 +10,14 @@
   
 
 
-  <title>HMBaytam Blog | HMBaytam Blog</title>
+  <title>Sample blog post | HMBaytam Blog</title>
   <link rel="icon" type="image/x-icon" href="/assets/img/favicon.png">
 
   
   <meta name="author" content="Hassan Elbaytam">
   
 
-  <meta name="description" content="This is where I will tell my friends way too much about me">
+  <meta name="description" content="Each post also has a subtitle">
 
   
 
@@ -52,11 +52,97 @@
 
   <!-- Structured Data JSON-DL -->
   
+   <script type="application/ld+json">
+    {
+        "@context": "https://schema.org/",
+        "@type": "BlogPosting",
+        "@id": "http://localhost:4000/",
+        "mainEntityOfPage": "http://localhost:4000/",
+        "headline": "Sample blog post",
+        "description": "",
+        "datePublished": "2023-02-07T12:18:36-05:00",
+        "dateModified": "2023-02-07T12:18:36-05:00",
+        "author": {
+            "@type": "Person",
+            "@id": "",
+            "name": "",
+            "image": {
+                "@type": "ImageObject",
+                "@id": "http://localhost:4000/assets/img/headshot.JPG",
+                "url": "http://localhost:4000/assets/img/headshot.JPG",
+                "height": "2048",
+                "width": "1536"
+            }
+        },
+        "publisher": {
+            "@type": "Organization",
+            "@id": "http://localhost:4000/",
+            "name": "HMBaytam Analytics",
+            "logo": {
+                "@type": "ImageObject",
+                "@id": "http://localhost:4000/assets/img/main.png",
+                "url": "http://localhost:4000/assets/img/main.png",
+                "width": "600",
+                "height": "60"
+            }
+        },
+        "image": {
+            "@type": "ImageObject",
+            "@id": "",
+            "url": "",
+            "height": "362",
+            "width": "388"
+        },
+        "url": "http://localhost:4000/test/test-markdown",
+        "isPartOf": {
+            "@type" : "Blog",
+             "@id": "http://localhost:4000/",
+             "name": "HMBaytam Blog",
+             "publisher": {
+                 "@type": "Organization",
+                 "@id": "http://localhost:4000/",
+                 "name": "HMBaytam Analytics"
+             }
+         }
+    }
+   </script>
+   <!-- Commented out to be used later -->
+   <!-- <script>
+            "commentCount": "1",
+        "comment": [
+            {
+                "@type": "Comment",
+                "@id": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/#Comment1",
+                "dateCreated": "2019-06-23 17:31:15",
+                "description": "I've been looking for a decent metadata scheme for use in a home-brew library system for the past 4 years now. I'm a big user of schema.org. I found this very interesting, especially the part about reconciliation. I assume you're referring to the process of identifying duplicate representations of works. This has also been one of my biggest struggles. I'll still be waiting for schema.org to mature...",
+                "author": {
+                    "@type": "Person",
+                    "name": "Jeff",
+                    "url": "http://schoenstatt.link"
+                }
+            }
+        ],
+        "wordCount": "488",
+        "keywords": [
+            "Bibframe2Schema.org",
+            "Libraries",
+            "Library of Congress"
+        ],
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "@id": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/#aggregate",
+            "url": "https://dataliberate.com/2019/05/14/library-metadata-evolution-final-mile/",
+            "ratingValue": "2.5",
+            "ratingCount": "2"
+        }
+   </script> -->
    <script>
      window.dataLayer.push({
        'event': 'page_info',
-       'page_author': 'Hassan Elbaytam',
-       'page_title': 'Home',
+       'post_author': '',
+       'post_title': 'Sample blog post',
+       'post_subtitle': 'Each post also has a subtitle',
+       'post_category': 'test'
      });
    </script>
    
@@ -104,17 +190,19 @@
 
   
   <meta property="og:site_name" content="HMBaytam | Data Analytics">
-  <meta property="og:title" content="HMBaytam Blog | HMBaytam Blog">
-  <meta property="og:description" content="This is where I will tell my friends way too much about me">
+  <meta property="og:title" content="Sample blog post | HMBaytam Blog">
+  <meta property="og:description" content="Each post also has a subtitle">
 
   
   <meta property="og:image" content="http://localhost:4000/assets/img/logo.png">
   
 
   
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="http://localhost:4000/">
-  <link rel="canonical" href="http://localhost:4000/">
+  <meta property="og:type" content="article">
+  <meta property="og:article:author" content="Hassan Elbaytam">
+  <meta property="og:article:published_time" content="2023-02-07T12:18:36-05:00">
+  <meta property="og:url" content="http://localhost:4000/test/test-markdown">
+  <link rel="canonical" href="http://localhost:4000/test/test-markdown">
   
 
   
@@ -123,8 +211,8 @@
   <meta name="twitter:site" content="@hmbaytam">
   <meta name="twitter:creator" content="@hmbaytam">
 
-  <meta property="twitter:title" content="HMBaytam Blog | HMBaytam Blog">
-  <meta property="twitter:description" content="This is where I will tell my friends way too much about me">
+  <meta property="twitter:title" content="Sample blog post | HMBaytam Blog">
+  <meta property="twitter:description" content="Each post also has a subtitle">
 
   
   <meta name="twitter:image" content="http://localhost:4000/assets/img/logo.png">
@@ -271,15 +359,18 @@
   <div class="container-md">
     <div class="row">
       <div class="col-xl-8 offset-xl-2 col-lg-10 offset-lg-1">
-        <div class="page-heading">
-          <h1>HMBaytam Blog</h1>
+        <div class="post-heading">
+          <h1>Sample blog post</h1>
           
             
-              <hr class="small">
-              <span class="page-subheading">This is where I will tell my friends way too much about me</span>
+              <h2 class="post-subheading">Each post also has a subtitle</h2>
             
           
 
+          
+            <span class="post-meta">Posted on February 7, 2023</span>
+            
+            
           
         </div>
       </div>
@@ -292,217 +383,198 @@
 
 
 
-<div class=" container-md " role="main">
+<div class=" container-md ">
   <div class="row">
     <div class=" col-xl-8 offset-xl-2 col-lg-10 offset-lg-1 ">
       
+        
+        
+        
+
+        <div id="header-gh-btns">
+          
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=daattali&repo=beautiful-jekyll&type=star&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=daattali&repo=beautiful-jekyll&type=fork&count=true" frameborder="0" scrolling="0" width="120px" height="20px"></iframe>
+                
+            
+              
+                  <iframe src="https://ghbtns.com/github-btn.html?user=daattali&type=follow&count=true" frameborder="0" scrolling="0" width="220px" height="20px"></iframe>
+              
+            
+          
+        </div>
+      
 
       
 
+      <article role="main" class="blog-post">
+        <p>This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to <a href="https://markdowntutorial.com/">take 5 minutes to learn how to write in markdown</a> - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.</p>
+
+<p><strong>Here is some bold text</strong></p>
+
+<h2 id="here-is-a-secondary-heading">Here is a secondary heading</h2>
+
+<p>Here’s a useless table:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: left">Number</th>
+      <th style="text-align: left">Next number</th>
+      <th style="text-align: left">Previous number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: left">Five</td>
+      <td style="text-align: left">Six</td>
+      <td style="text-align: left">Four</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Ten</td>
+      <td style="text-align: left">Eleven</td>
+      <td style="text-align: left">Nine</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Seven</td>
+      <td style="text-align: left">Eight</td>
+      <td style="text-align: left">Six</td>
+    </tr>
+    <tr>
+      <td style="text-align: left">Two</td>
+      <td style="text-align: left">Three</td>
+      <td style="text-align: left">One</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>How about a yummy crepe?</p>
+
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" /></p>
+
+<p>It can also be centered!</p>
+
+<p><img src="https://s3-media3.fl.yelpcdn.com/bphoto/cQ1Yoa75m2yUFFbY2xwuqw/348s.jpg" alt="Crepe" class="mx-auto d-block" /></p>
+
+<p>Here’s a code chunk:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>var foo = function(x) {
+  return(x + 5);
+}
+foo(3)
+</code></pre></div></div>
+
+<p>And here is the same code with syntax highlighting:</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p>And here is the same code yet again but with line numbers:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><table class="rouge-table"><tbody><tr><td class="gutter gl"><pre class="lineno">1
+2
+3
+4
+</pre></td><td class="code"><pre><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">return</span><span class="p">(</span><span class="nx">x</span> <span class="o">+</span> <span class="mi">5</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">foo</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+</pre></td></tr></tbody></table></code></pre></figure>
+
+<h2 id="boxes">Boxes</h2>
+<p>You can add notification, warning and error boxes like this:</p>
+
+<h3 id="notification">Notification</h3>
+
+<p class="box-note"><strong>Note:</strong> This is a notification box.</p>
+
+<h3 id="warning">Warning</h3>
+
+<p class="box-warning"><strong>Warning:</strong> This is a warning box.</p>
+
+<h3 id="error">Error</h3>
+
+<p class="box-error"><strong>Error:</strong> This is an error box.</p>
+
+      </article>
+
+      
+        <div class="blog-tags">
+          <span>Tags:</span>
+          
+            <a href="/tags#test">test</a>
+          
+        </div>
+      
+
+      
+
+      
+        <!-- Check if any share-links are active -->
 
 
-<!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-<ul class="posts-list list-unstyled" role="list">
+
+
+<section id = "social-share-section">
+  <span class="sr-only">Share: </span>
+
   
-  <li class="post-preview">
-    <article>
-      
-
-      
-
-      <a href="http://localhost:4000/strategy/why-you-need-a-data-strategy">
-        <h2 class="post-title">5 reasons why you need a data strategy</h2>
-
-        
-          <h3 class="post-subtitle">
-          Data holds immense value for businesses, and without it businesses may struggle.
-          </h3>
-        
-      </a>
-
-      <p class="post-meta">
-        
-        Posted on February 8, 2023
-      </p>
-
-      
-      <div class="post-image post-image-small">
-        <a href="http://localhost:4000/strategy/why-you-need-a-data-strategy" aria-label="Thumbnail">
-          <img src="http://localhost:4000/assets/img/ds2.png" alt="Post thumbnail">
-        </a>
-      </div>
-      
-
-      
-      
-      <div class="post-image post-image-short">
-        <a href="http://localhost:4000/strategy/why-you-need-a-data-strategy" aria-label="Thumbnail">
-          <img src="http://localhost:4000/assets/img/ds2.png" alt="Post thumbnail">
-        </a>
-      </div>
-      
-
-      <div class="post-entry">
-        
-        Data has become an integral part of businesses today. The amount of data generated and collected by companies has grown significantly in recent years, and it’s only expected to increase.
-
-
-        
-        
-          <a href="http://localhost:4000/strategy/why-you-need-a-data-strategy" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-      
-
-      
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          
-          <li class="list-inline-item">
-            <a href="http://localhost:4000/tags#strategy">strategy</a>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </article>
-  </li>
+    <a href="https://twitter.com/intent/tweet?text=Sample+blog+post&url=http%3A%2F%2Flocalhost%3A4000%2Ftest%2Ftest-markdown"
+      class="btn btn-social-icon btn-twitter" title="Share on Twitter">
+      <span class="fab fa-fw fa-twitter" aria-hidden="true"></span>
+      <span class="sr-only">Twitter</span>
+    </a>
   
-  <li class="post-preview">
-    <article>
-      
 
-      
-
-      <a href="http://localhost:4000/test/flake-it-till-you-make-it">
-        <h2 class="post-title">Flake it till you make it</h2>
-
-        
-          <h3 class="post-subtitle">
-          Excerpt from Soulshaping by Jeff Brown
-          </h3>
-        
-      </a>
-
-      <p class="post-meta">
-        
-        Posted on February 7, 2023
-      </p>
-
-      
-      <div class="post-image post-image-small">
-        <a href="http://localhost:4000/test/flake-it-till-you-make-it" aria-label="Thumbnail">
-          <img src="http://localhost:4000/assets/img/thumb.png" alt="Post thumbnail">
-        </a>
-      </div>
-      
-
-      
-      
-      <div class="post-image post-image-short">
-        <a href="http://localhost:4000/test/flake-it-till-you-make-it" aria-label="Thumbnail">
-          <img src="http://localhost:4000/assets/img/thumb.png" alt="Post thumbnail">
-        </a>
-      </div>
-      
-
-      <div class="post-entry">
-        
-        Under what circumstances should we step off a path? When is it essential that we finish what we start? If I bought a bag of peanuts and had an allergic reaction, no one would fault me if I threw it out. If I ended a relationship with a woman who...
-        
-        
-          <a href="http://localhost:4000/test/flake-it-till-you-make-it" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-      
-
-      
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          
-          <li class="list-inline-item">
-            <a href="http://localhost:4000/tags#books">books</a>
-          </li>
-          
-          <li class="list-inline-item">
-            <a href="http://localhost:4000/tags#test">test</a>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </article>
-  </li>
   
-  <li class="post-preview">
-    <article>
-      
 
-      
-
-      <a href="http://localhost:4000/test/test-markdown">
-        <h2 class="post-title">Sample blog post</h2>
-
-        
-          <h3 class="post-subtitle">
-          Each post also has a subtitle
-          </h3>
-        
-      </a>
-
-      <p class="post-meta">
-        
-        Posted on February 7, 2023
-      </p>
-
-      
-
-      
-      
-
-      <div class="post-entry">
-        
-        This is a demo post to show you how to write blog posts with markdown.  I strongly encourage you to take 5 minutes to learn how to write in markdown - it’ll teach you how to transform regular text into bold/italics/headings/tables/etc.
-
-
-        
-        
-          <a href="http://localhost:4000/test/test-markdown" class="post-read-more">[Read&nbsp;More]</a>
-        
-      </div>
-      
-
-      
-      <div class="blog-tags">
-        <span>Tags:</span>
-        <!-- role="list" needed so that `list-style: none` in Safari doesn't remove the list semantics -->
-        <ul class="d-inline list-inline" role="list">
-          
-          <li class="list-inline-item">
-            <a href="http://localhost:4000/tags#test">test</a>
-          </li>
-          
-        </ul>
-      </div>
-      
-
-    </article>
-  </li>
   
-</ul>
+    <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Ftest%2Ftest-markdown"
+      class="btn btn-social-icon btn-linkedin" title="Share on LinkedIn">
+      <span class="fab fa-fw fa-linkedin" aria-hidden="true"></span>
+      <span class="sr-only">LinkedIn</span>
+    </a>
+  
 
+  
+
+  
+
+</section>
 
 
 
       
 
+      <ul class="pagination blog-pager">
+        
+        
+        <li class="page-item next">
+          <a class="page-link" href="/test/flake-it-till-you-make-it" data-toggle="tooltip" data-placement="top" title="Flake it till you make it">Next Post &rarr;</a>
+        </li>
+        
+      </ul>
       
+  
+  
+  
+
+  
+
+
+  
+
+  
+
+
 
     </div>
   </div>
